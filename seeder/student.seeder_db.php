@@ -1,4 +1,5 @@
 <?php
+//форма для студентов
 require_once "../includes/dbConnect.php";
 ?>
 

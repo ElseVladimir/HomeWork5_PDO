@@ -1,4 +1,5 @@
 <?php
+//форма для преподователей
 require_once "../includes/dbConnect.php";
 ?>
 

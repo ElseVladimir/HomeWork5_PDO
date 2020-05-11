@@ -5,10 +5,13 @@ class Admin extends Person
 {
 protected $workingDay = '';
 
-    public function __construct($fullName, $phone, $email, $role,$workingDay)
+    public function __construct($id, $fullName, $phone, $email, $role,$workingDay)
     {
-        parent::__construct($fullName, $phone, $email, $role);
+        parent::__construct($id, $fullName, $phone, $email, $role);
         $this->workingDay = $workingDay;
+    }
+    public function getID(){
+        return $this->id;
     }
 
     public function getVisitCardAdmin()

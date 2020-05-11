@@ -5,12 +5,14 @@ class Teacher extends Person
 {
 protected $subject = '';
 
-    public function __construct($fullName, $phone, $email, $role, $subject)
+    public function __construct($id, $fullName, $phone, $email, $role, $subject)
     {
-        parent::__construct($fullName, $phone, $email, $role);
+        parent::__construct($id, $fullName, $phone, $email, $role);
         $this->subject = $subject;
     }
-
+    public function getID(){
+        return $this->id;
+    }
 
     public function getVisitCardTeacher()
     {

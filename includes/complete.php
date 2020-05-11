@@ -1,3 +1,4 @@
+<?php //вывод об успешном создании записи в бд ?>
 <!doctype html>
 <html lang="en">
 <head>

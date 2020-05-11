@@ -1,4 +1,5 @@
 <?php
+//коннект к базе данных
 require_once "config.example.php";
 
 try{

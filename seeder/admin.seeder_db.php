@@ -1,4 +1,5 @@
 <?php
+//форма для админов
 require_once "../includes/dbConnect.php";
 ?>
 

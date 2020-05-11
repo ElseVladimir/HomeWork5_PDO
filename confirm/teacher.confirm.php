@@ -1,5 +1,5 @@
 <?php
-
+//крад для преподавателей
 require_once "../includes/dbConnect.php";
 $name = $_POST['name'];
 $telNumber = $_POST['telNumber'];

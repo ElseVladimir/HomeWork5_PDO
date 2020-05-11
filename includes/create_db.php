@@ -1,4 +1,5 @@
 <?php
+//этот создает таблицу
 require_once "dbConnect.php";
 
 try{

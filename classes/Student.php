@@ -5,10 +5,14 @@ class Student extends Person
 {
 protected $marks = 0;
 
-    public function __construct($fullName, $phone, $email, $role, $marks)
+    public function __construct($id,$fullName, $phone, $email, $role, $marks)
     {
-        parent::__construct($fullName, $phone, $email, $role);
+        parent::__construct($id,$fullName, $phone, $email, $role);
         $this->marks = $marks;
+    }
+
+    public function getID(){
+        return $this->id;
     }
 
     public function getVisitCardStudent()

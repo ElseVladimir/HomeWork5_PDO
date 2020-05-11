@@ -1,4 +1,5 @@
 <?php
+//крад для админ формы(ввод в базу)
 require_once "../includes/dbConnect.php";
 $name = $_POST['name'];
 $telNumber = $_POST['telNumber'];
