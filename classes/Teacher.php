@@ -16,11 +16,8 @@ protected $subject = '';
 
     public function getVisitCardTeacher()
     {
-        $getVC = '<ul>';
-        $getVC .= '<li>Полное имя: '.$this->fullName.'</li>';
-        $getVC .= '<li>Номер телефона: '.$this->phone.'</li>';
-        $getVC .= '<li>Емеил: '.$this->email.'</li>';
-        $getVC .= '<li>Статус : '.$this->role.'</li>';
+        $getVC = parent::getVisitCard();
+        $getVC .= '<ul>';
         $getVC .= '<li>Преподаваемый предмет: '.$this->subject.'</li>';
         $getVC .= '</ul>';
         return $getVC;

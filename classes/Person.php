@@ -18,5 +18,13 @@ protected $role = '';
         $this->role = $role;
     }
 
-
+    public function getVisitCard(){
+        $getVC = '<ul>';
+        $getVC .= '<li>Полное имя: '.$this->fullName.'</li>';
+        $getVC .= '<li>Номер телефона: '.$this->phone.'</li>';
+        $getVC .= '<li>Емеил: '.$this->email.'</li>';
+        $getVC .= '<li>Статус : '.$this->role.'</li>';
+        $getVC .= '</ul>';
+        return $getVC;
+    }
 }
